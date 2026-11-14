@@ -48,8 +48,7 @@
     link.rel = [
       ...new Set([
         ...link.rel.split(/\s+/).filter(Boolean),
-        'noopener',
-        'noreferrer'
+        'noopener'
       ])
     ].join(' ');
   }
