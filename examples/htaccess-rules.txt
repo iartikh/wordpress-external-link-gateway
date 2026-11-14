@@ -1,0 +1,11 @@
+
+# External Link Gateway
+# Place these rules BEFORE the standard WordPress rules.
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# Route /go/<encoded-url> to go.php
+RewriteRule ^go/([A-Za-z0-9_-]+)/?$ go.php?u=$1 [L,QSA,NC]
+
+</IfModule>
