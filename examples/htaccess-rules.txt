@@ -6,6 +6,7 @@
 RewriteEngine On
 
 # Route /go/<encoded-url> to go.php
-RewriteRule ^go/([A-Za-z0-9_-]+)/?$ go.php?u=$1 [L,QSA,NC]
+RewriteRule ^go/([A-Za-z0-9_-]+)/?$ 
+go.php?go=$1 [L,QSA,NC]
 
 </IfModule>
